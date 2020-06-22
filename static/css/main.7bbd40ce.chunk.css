@@ -1,0 +1,179 @@
+section.app-layout {
+  min-height: 100vh;
+}
+
+header.app-layout__header {
+  padding: 0;
+  background-color: white;
+}
+
+.app-layout__header__trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.app-layout__content {
+  margin: 24px 16px;
+  padding: 24px;
+  background: white;
+}
+
+.statistic-card {
+  padding: 20px 24px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.statistic-card__avatar-wrapper {
+  float: left;
+  margin-top: 3px;
+  margin-right: 20px;
+}
+
+.statistic-card__title {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.statistic-card__value-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.statistic-card__value-container__value {
+  margin-right: 30px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.statistic-card__value-container__percentage {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.statistic__block {
+  position: relative;
+  display: inline-block;
+  padding: 10px 32px;
+  text-align: center;
+}
+
+.statistic__block--left {
+  text-align: left;
+}
+
+.statistic__block--right {
+  text-align: right;
+}
+
+.statistic__block::after {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 1px;
+  height: 40px;
+  background-color: #f0f0f0;
+  content: '';
+}
+
+.statistic__block:last-child::after {
+  display: none;
+}
+
+.trend__triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 2px;
+  vertical-align: middle;
+  border-style: solid;
+}
+
+.trend__triangle--up {
+  border-color: transparent transparent #3f8600 transparent;
+  border-width: 0 6px 8px 6px;
+}
+
+.trend__triangle--down {
+  border-color: #cf1322 transparent transparent transparent;
+  border-width: 8px 6px 0 6px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*# sourceMappingURL=main.7bbd40ce.chunk.css.map*/
